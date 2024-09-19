@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscripción de Jugadores - Escuela de Fútbol</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header {
+      background-color: #004080;
+      color: rgb(209, 81, 7);
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    form {  /*le doy el estilo al formulario--> */
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 10px;
+    }
+    input, select {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Escuela de Fútbol RSM</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="inscripcion.html">Inscripción</a></li>
+        <li><a href="categorias.html">Categorías</a></li>
+        <li><a href="gestion.html">Gestión Financiera</a></li>
+        <li><a href="Horarios.html">Gestión de Horarios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Inscripción de Jugadores</h2>
+     <form id="form-inscripcion">  
+      <label for="nombre-jugador">Nombre del estudiante:</label>
+      <input type="text" id="nombre-jugador" name="nombre" required>
+
+      <label for="edad-jugador">Edad:</label>
+      <input type="number" id="edad-jugador" name="edad" required>
+
+      <label for="categoria">Categoría:</label>
+      <select id="categoria" name="categoria">
+        <option value="infantil">Infantil (6-10 años)</option>
+        <option value="juvenil">Juvenil (11-15 años)</option>
+        <option value="mayores">Mayores (16-18 años)</option>
+      </select>
+
+      <h3>Datos del Padre de Familia</h3>
+      <label for="nombre-padre">Nombre del Padre o Tutor:</label>
+      <input type="text" id="nombre-padre" name="nombre-padre" required>
+
+      <label for="telefono-padre">Teléfono de Contacto:</label>
+      <input type="tel" id="telefono-padre" name="telefono-padre" required>
+
+      <input type="submit" value="Inscribirse">
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2024 Escuela de Fútbol RSM</p>
+  </footer>
+
+  <script>
+    document.getElementById('form-inscripcion').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Jugador inscrito exitosamente');
+    });
+  </script>
+</body>
+</html>
