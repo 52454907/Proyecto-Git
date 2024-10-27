@@ -1,0 +1,10 @@
+<header>
+  <nav> <!-- Menú de navegación principal --> </nav>
+</header>
+<main>
+  <section id="bienvenida"> <!-- Bienvenida con imágenes de la escuela --> </section>
+  <section id="programas"> <!-- Descripción de los programas ofrecidos --> </section>
+</main>
+<footer>
+  <p> <!-- Información de contacto y redes sociales --> </p>
+</footer>
